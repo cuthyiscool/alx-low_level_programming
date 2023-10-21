@@ -6,12 +6,15 @@
 #include <string.h>
 
 /**
- * struct lists_s - singly linked list
- * @str: string - (malloc'ed string)
- * @len: length of the string
- * @next: points to the next node
+ * struct list_s - Singly linked list node
+ * @str: String stored in the node (malloc'ed string)
+ * @len: Length of the string
+ * @next: Pointer to the next node in the list
  *
- * Description: singly linked list node structure
+ * Description: This structure represents a node in a singly linked list.
+ * Each node stores a string and its length. The 'next' pointer points to
+ * the next node in the list. Memory for the 'str' member is allocated using
+ * malloc and should be freed when the node is no longer needed.
  */
 typedef struct list_s
 {
